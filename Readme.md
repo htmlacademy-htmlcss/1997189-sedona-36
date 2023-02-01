@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вера Первушина](https://up.htmlacademy.ru/htmlcss/36/user/1997189).
-* Наставник: [Виктория Шабалина](https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Ольга Юзич](https://htmlacademy.ru/profile/id350391).
 
 ---
 
