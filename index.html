@@ -25,7 +25,6 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
 
-
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
@@ -47,9 +46,6 @@
                 <span class="navigation-favourites">12</span>
               </a>
             </li>
-
-
-
 
             <li class="navigation-item navigation-user-item navigation-button-wrapper">
               <a class="navigation-user-button" href="#">Хочу сюда!</a>
@@ -237,10 +233,66 @@
               </svg>
 
             </a>
-            </a>
+
           </div>
         </div>
       </footer>
+    </div>
+    <!--МОДАЛЬНОЕ ОКНО-->
+    <div class="modal-container">
+      <div class="modal modal-search-form">
+        <!--ТИП КНОПКИ ОПРЕДЕЛИТЬ-->
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden"> Закрыть </span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group">
+              <label class="modal-field-caption" for="modal-input-entry">Дата заезда:</label>
+              <input class="modal-field" name="arrival-date" id="modal-input-entry" type="text"
+                placeholder="Укажите дату" value="27 апреля 2020">
+              <span class="modal-field-row modal-field-row-failure">Мы не можем отправить вас в прошлое.</span>
+            </p>
+
+            <p class="field-group">
+              <label class="modal-field-caption" for="modal-input-departure">Дата выезда:</label>
+              <input class="modal-field" name="departure-date" id="modal-input-departure" type="text"
+                placeholder="Укажите дату" value="1 сентября 2021">
+              <span class="modal-field-row">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+
+            <div class="field-group">
+              <div class="field-group-quantity">
+                <label class="modal-field-caption" for="modal-input-adult">Взрослые:</label>
+                <div class="modal-buttons-wrapper">
+                  <button class="modal-quantity-button button-decrease" type="button"><span
+                      class="visually-hidden">Уменьшить количество взрослых посетителей</span></button>
+                  <input class="modal-field-quantity" name="adults-quantity" type="number" value="2"
+                    id="modal-input-adult">
+                  <button class="modal-quantity-button button-increase"><span class="visually-hidden">Увеличить
+                      количество взрослых посетителей</span>+</button>
+                </div>
+              </div>
+
+              <div class="field-group-quantity">
+
+                <label class="modal-field-caption" for="modal-input-children"> Дети:</label>
+                <a class="modal-link tooltip-link" href="#"></a>
+                <div class="modal-buttons-wrapper">
+                  <button class="modal-quantity-button button-decrease" type="button"></button>
+                  <input class="modal-field-quantity" name="childrens-quantity" type="number" value="2"
+                    id="modal-input-children">
+                  <button class="modal-quantity-button button-increase">+</button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-form-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 

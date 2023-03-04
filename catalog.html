@@ -77,71 +77,126 @@
             <h2 class="visually-hidden">Условия проживания в гостиницах Седоны</h2>
             <form class="accomodations-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="accomodation-filter-wrapper">
+
                 <fieldset class="accomodations-filter-group infrastructure-box">
                   <legend class="accomodations-filter-title">Инфраструктура:</legend>
                   <!--ЕСЛИ ЕСТЬ LEGEND, ЗАГОЛОВОК НУЖЕН?-->
                   <ul class="accomodation-filter-list">
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                        Бассейн
+                        <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                        <span class="control-mark"></span>
+                       <span class="control-label">Бассейн</span>
                       </label>
                     </li>
 
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
 
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        WI-FI
+                        <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label"> WI-FI</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
+
                 <fieldset class="accomodations-filter-group type-box">
-                  <legend class="accomodations-filter-title">Тип жилья:</legend>
+                  <legend class="accomodations-filter-title">Тип Жилья:</legend>
                   <ul class="accomodation-filter-list">
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-radio" checked>
-                        Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="accomodation-radio" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-radio">
-                        Отель
+                        <input class="control-input visually-hidden" type="radio" name="accomodation-radio">
+                        <span class="control-mark"></span>
+                       <span class="control-label"> Мотель</span>
                       </label>
                     </li>
                     <li class="accomodation-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="accomodation-radio">
-                        Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="accomodation-radio">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
               <div class="accomodation-filter-wrapper">
-                <div class="wrapper">
-                  <fieldset class="accomodations-filter-group price-box">
-                    <legend class="accomodations-filter-title">Стоимость,₽:</legend><!-- -->
+
+                <div class="range-wrapper">
+                  <div class="range">
+
+                    <fieldset class="accomodations-filter-group price-box">
+                      <legend class="accomodations-filter-title">Стоимость,₽:</legend>
+
+
+                      <div class="range-wrapper-inputs">
+                        <div class="wrapper-before">
+                          <label class="before-row-text" for="before-row">от
+                          </label>
+                          <input class="before-row-input" id="before-row" name="min-price" type="number" value="0"
+                            maxlength="7">
+                        </div>
+
+                        <div class="wrapper-after">
+                          <label class="after-row-text" for="after-row-input">до
+                          </label>
+                          <input class="after-row-input" id="after-row-input" name="max-price" type="number"
+                            value="9000" maxlength="7">
+                        </div>
+
+                      </div>
+                      <div class="range-scale">
+                        <div class="range-bar" style="left:0; right:62px">
+                          <button class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                          </button>
+                          <button class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                          </button>
+                        </div>
+                      </div>
+
+
+
+                      <!-- <div class="inputs-wrapper">
+                      <label class="before-row-text" for="before-row">от
+                      <input class="before-row-input" id="before-row" type="text">
+                      </label>
+                      <label class="before-row-text" for="before-row-input">до
+                      <input class="before-row-input" id="before-row-input" type="text">
+                    </label>
+                    </div>-->
+
+                      <!-- <legend class="accomodations-filter-title">Стоимость,₽:</legend>
                     <label class="visually-hidden" for="before-row"> Поле ввода начальной стоимости
                     </label>
-                    <label class="visually-hidden" for="before-row-input">
+                    <label class="visually-hidden" for="before-row-input">Поле воода конечной стоимости
                     </label>
                     <div class="inputs-wrapper">
                       <input class="before-row-input" id="before-row" type="text" placeholder="от">
                       <input class="before-row-input" id="before-row-input" type="text" placeholder="до">
-                    </div>
+                    </div>-->
 
-                  </fieldset>
+                    </fieldset>
+                  </div>
                 </div>
+
+
                 <div class="accomodations-buttons-wrapper">
                   <button class="button accomodation-btn" type="submit">Применить</button>
                   <button class="accomodation-btn accomodation-btn-reset" type="reset">Сбросить</button>
@@ -182,7 +237,10 @@
                 <img class="search-result-img" src="image/hotel-1.jpg" width="300" height="212"
                   alt="вид из ущелья на звездное небо.">
               </a>
+
+
               <h3 class="search-result-hotel">Amara Resort & Spa</h3>
+
               <p class="search-result-type">Гостиница</p>
               <p class="search-result-price">От 4000₽</p>
               <a class="link search-result-link" href="#">Подробнее</a>
