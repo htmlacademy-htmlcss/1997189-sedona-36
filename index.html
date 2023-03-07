@@ -17,7 +17,6 @@
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
-
             <li class="navigation-item ">
               <a class="navigation-link navigation-link-current">Главная</a>
             </li>
@@ -32,7 +31,6 @@
 
 
           <ul class="navigation-list navigation-user">
-
             <li class="navigation-item navigation-user-item">
               <a class="navigation-link navigation-user-link navigation-search" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -239,7 +237,7 @@
       </footer>
     </div>
     <!--МОДАЛЬНОЕ ОКНО-->
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search-form">
         <!--ТИП КНОПКИ ОПРЕДЕЛИТЬ-->
         <button class="modal-close-button" type="button">
@@ -254,7 +252,7 @@
               <label class="modal-field-caption" for="modal-input-entry">Дата заезда:</label>
               <input class="modal-field" name="arrival-date" id="modal-input-entry" type="text"
                 placeholder="Укажите дату" value="27 апреля 2020">
-              <span class="modal-field-row modal-field-row-failure">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-field-row modal-field-row-error">Мы не можем отправить вас в прошлое.</span>
             </p>
 
             <p class="field-group">
@@ -268,24 +266,54 @@
               <div class="field-group-quantity">
                 <label class="modal-field-caption" for="modal-input-adult">Взрослые:</label>
                 <div class="modal-buttons-wrapper">
-                  <button class="modal-quantity-button button-decrease" type="button"><span
-                      class="visually-hidden">Уменьшить количество взрослых посетителей</span></button>
+                  <button class="modal-quantity-button button-decrease" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
+                    <span class="button-decrease-mark"></span>
+                  </button>
                   <input class="modal-field-quantity" name="adults-quantity" type="number" value="2"
                     id="modal-input-adult">
-                  <button class="modal-quantity-button button-increase"><span class="visually-hidden">Увеличить
-                      количество взрослых посетителей</span>+</button>
+                  <button class="modal-quantity-button button-increase">
+                    <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
+                    <span class="button-increase-mark"></span>
+                  </button>
                 </div>
               </div>
 
               <div class="field-group-quantity">
 
-                <label class="modal-field-caption" for="modal-input-children"> Дети:</label>
-                <a class="modal-link tooltip-link" href="#"></a>
+                <label class="modal-field-caption" for="modal-input-children">Дети:</label>
+                <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно. </span> </button>
+                <!--<label class=" modal-field-caption form-label" for="modal-input-children">Дети: lj djctvyflwfnb
+                  <button class="tooltip-toggle" type="button">
+                  </button>
+                </label>
+                <span class="tooltip">
+                  <!--<button class="tooltip-toggle" type="button">
+                   <!-- <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                      viewBox="0 0 26 26">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                    </svg>-->
+                 <!--</button>-->
+               <!-- <span class="form-label">
+
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно. </span>
+                  </span>
+                </span>-->
+
+
                 <div class="modal-buttons-wrapper">
-                  <button class="modal-quantity-button button-decrease" type="button"></button>
+                  <button class="modal-quantity-button button-decrease" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых посетителей</span>
+                    <span class="button-decrease-mark"></span>
+                  </button>
                   <input class="modal-field-quantity" name="childrens-quantity" type="number" value="2"
                     id="modal-input-children">
-                  <button class="modal-quantity-button button-increase">+</button>
+                  <button class="modal-quantity-button button-increase">
+                    <span class="visually-hidden">Увеличить количество взрослых посетителей</span>
+                    <span class="button-increase-mark"></span>
+                  </button>
                 </div>
               </div>
             </div>
