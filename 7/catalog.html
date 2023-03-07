@@ -87,7 +87,7 @@
                       <label class="control">
                         <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
                         <span class="control-mark"></span>
-                       <span class="control-label">Бассейн</span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
 
@@ -123,7 +123,7 @@
                       <label class="control">
                         <input class="control-input visually-hidden" type="radio" name="accomodation-radio">
                         <span class="control-mark"></span>
-                       <span class="control-label"> Мотель</span>
+                        <span class="control-label"> Мотель</span>
                       </label>
                     </li>
                     <li class="accomodation-filter-item">
@@ -150,14 +150,15 @@
                           <label class="before-row-text" for="before-row">от
                           </label>
                           <input class="before-row-input" id="before-row" name="min-price" type="number" value="0"
-                            maxlength="7">
+                            maxlength="7" placeholder="цена">
                         </div>
 
                         <div class="wrapper-after">
                           <label class="after-row-text" for="after-row-input">до
                           </label>
                           <input class="after-row-input" id="after-row-input" name="max-price" type="number"
-                            value="9000" maxlength="7">
+                            value="9000" maxlength="7" placeholder="цена">
+                          <!--after-row-input-->
                         </div>
 
                       </div>
@@ -219,7 +220,7 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <div class="button-cards-wrapper">
-              <a href="#" class=" button-cards button-many-cards">
+              <a href="#" class=" button-cards button-many-cards button-cards-current">
                 <span class="visually-hidden">Показать несколько карточек</span>
               </a>
               <a href="#" class="button-cards button-one-card">
@@ -240,13 +241,16 @@
               </a>
 
 
-              <h3 class="search-result-hotel">Amara Resort & Spa</h3>
+              <a class="search-result-hotel" href="#">
+                <h3 class="search-result-hotel">Amara Resort & Spa</h3>
+              </a>
 
               <p class="search-result-type">Гостиница</p>
               <p class="search-result-price">От 4000₽</p>
               <a class="link search-result-link" href="#">Подробнее</a>
               <button class="button search-result-button" type="button">В избранное</button>
               <div class="search-result-starsbox">
+                <span class="rating-star"></span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -261,8 +265,10 @@
                 <img class="search-result-img" src="image/hotel-2.jpg" width="300" height="212"
                   alt="горы на фоне радуги.">
               </a>
-              <h3 class="search-result-hotel">Villas at Poco Diablo
-              </h3>
+              <a class="search-result-hotel" href="#">
+                <h3 class="search-result-hotel">Villas at Poco Diablo
+                </h3>
+              </a>
               <p class="search-result-type">Гостиница</p>
               <p class="search-result-price">От 5000 ₽</p>
               <a class="link search-result-link" href="#">Подробнее</a>
@@ -283,7 +289,10 @@
                 <img class="search-result-img" src="image/hotel-3.jpg" width="300" height="212"
                   alt="песчаные горы, покрытые зеленым кустарником.">
               </a>
-              <h3 class="search-result-hotel">Desert Quail Inn</h3>
+              <a class="search-result-hotel" href="#">
+                <h3 class="search-result-hotel">Desert Quail Inn</h3>
+              </a>
+
               <p class="search-result-type">Гостиница</p>
               <p class="search-result-price">От 2500 ₽</p>
               <a class="link search-result-link" href="#">Подробнее</a>
@@ -303,7 +312,9 @@
               <a class="search-result-card" href="#">
                 <img class="search-result-img" src="image/hotel-4.jpg" width="300" height="212" alt="песчаные горы.">
               </a>
-              <h3 class="search-result-hotel">GreenTree Inn</h3>
+              <a class="search-result-hotel" href="#">
+                <h3 class="search-result-hotel">GreenTree Inn</h3>
+              </a>
               <p class="search-result-type">Гостиница</p>
               <p class="search-result-price">От 1500 ₽</p>
               <a class="link search-result-link" href="#">Подробнее</a>
@@ -323,7 +334,7 @@
             <li class="pagination-item pagination-current">
               <a class="pagination-link ">1</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item ">
               <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
@@ -333,7 +344,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <span class="pagination-link">...</span>
               <!--НУЖНА ССЫЛКА ДЛЯ ТОЧЕК???-->
             </li>
             <li class="pagination-item">
