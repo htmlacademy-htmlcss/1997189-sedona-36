@@ -630,16 +630,17 @@ body {
 
 @supports not selector(:focus-visible) {
   .page-footer-input:focus {
-    background-color: #E6E6E6;
-    border: 3px solid #83B3D3;
+    border: none;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
   }
 }
 
-.page-footer-input:not(:placeholder-shown) {
+/*.page-footer-input:not(:placeholder-shown) {
   border: none;
   outline: 2px solid #000000;
   outline-offset: -2px;
-}
+}*/
 
 .email-btn {
   color: #ffffff;
@@ -983,21 +984,21 @@ body {
 
   .before-row-input:focus,
   .after-row-input:focus {
-    background-color: #E6E6E6;
-    border: 3px solid #83B3D3;
+    outline: 2px solid #000000;
+  background-color: #F2F2F2
     /*outline-offset: -3px;*/
   }
 }
 
-.before-row-input:not(:placeholder-shown),
+/*.before-row-input:not(:placeholder-shown),
 .after-row-input:not(:placeholder-shown) {
   outline: 2px solid #000000;
   background-color: #F2F2F2
-}
+}*/
 
 .before-row-input:disabled,
 .after-row-input:disabled {
-  outline: none;
+  border: none;
   border-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1796,17 +1797,17 @@ body {
 
 @supports not selector(:focus-visible) {
   .modal-field:focus {
-    background-color: #E6E6E6;
-    border: none;
-    outline: 3px solid #83B3D3;
+    background-color: F2F2F2;
+  border: none;
+  outline: 2px solid #000000;
   }
 }
 
-.modal-field:not(:placeholder-shown) {
+/*.modal-field:not(:placeholder-shown) {
   background-color: F2F2F2;
   border: none;
   outline: 2px solid #000000;
-}
+}*/
 
 .modal-field-row {
   grid-column: 2/3;
@@ -1876,6 +1877,7 @@ body {
   appearance: none;
   margin: 0;
 }
+
 
 .modal-buttons-wrapper {
   display: flex;
@@ -1972,6 +1974,20 @@ body {
 .modal-quantity-button:active>.button-increase-mark {
   opacity: 0.2;
 }
+.modal-field-quantity:disabled{
+  outline: none;
+  background-color:#f2f2f2;
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  opacity:0.3;
+}
+.modal-quantity-button:disabled :not(:hover) {
+  background-color:#f2f2f2;
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  opacity:0.3;
+}
+
 
 .button-increase-mark {
   background-image: url("../image/plus.svg");
