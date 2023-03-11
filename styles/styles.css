@@ -33,7 +33,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -905,7 +906,8 @@ body {
 .after-row-input::-webkit-outer-spin-button,
 .before-row-input::-webkit-inner-spin-button,
 .before-row-input::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1167,7 +1169,8 @@ body {
   width: 292px;
   padding: 11px 40px 11px 20px;
   margin-right: 72px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url("../image/select-arrow.svg");
   background-repeat: no-repeat;
   background-size: 12px 10px;
@@ -1755,17 +1758,20 @@ body {
   cursor: pointer;
   padding: 15px 10px;
   outline: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .modal-field-quantity::-webkit-inner-spin-button,
 .modal-field-quantity::-webkit-outer-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 input[type="number"] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .modal-buttons-wrapper {
